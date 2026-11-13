@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base href="https://testingcf.jsdelivr.net/gh/aDiesmos/maths/maths/">
+
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Funkin' Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            cursor: url('ArrowCursor.png'), auto; /* Custom cursor */
+            background-image: linear-gradient(45deg, #ff00cc, #3333ff, #66ff33, #ff9933);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 255, 0.5);
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #0056b3; /* Change color on hover */
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content p {
+            font-size: 1.2em;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-8px);
+            background: #0056b3;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .grid-item a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            transition: transform 0.3s, background-color 0.3s;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        footer:hover {
+            transform: scale(1.05);
+            background-color: #0056b3; /* Change background color on hover */
+            color: white; /* Change text color on hover */
+        }
+
+        /* Animate the favicon */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Apply animation to the favicon */
+        head > link[rel='shortcut icon'] {
+            animation: pulse 2s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Funkin' Page</h1>
+        <nav>
+            <ul>
+            </ul>
+        </nav>
+        <div class="content">
+            <p>Welcome to The Funkin' Page! We are spliting the website into 2 parts ! because github wont update the website anymore sadly -Jalen:</p>
+        </div>
+        <div class="grid-container">
+            <div class="grid-item"><a href="https://reading.diesmos.com/pitstop/">Friday Night Funkin'</a></div>
+            <div class="grid-item"><a href="/fnfhd/">Friday Night Funkin' HD</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/rtx/">Friday Night Funkin' RTX On</a></div>
+            <div class="grid-item"><a href="/badfnf/">Friday Night Funkin' But Bad</a></div>
+            <div class="grid-item"><a href="/funkadelix/">Friday Night Funkin' Funkadelix</a></div>
+            <div class="grid-item"><a href="/3x3/">Friday Night Funkin' 3x3 Remixed</a></div>
+            <div class="grid-item"><a href="/bside">Friday Night Funkin' B-Sides</a></div>
+            <div class="grid-item"><a href="/dsides">Friday Night Funkin' D-Sides</a></div>
+            <div class="grid-item"><a href="/neo">Friday Night Funkin' Neo</a></div>
+            <div class="grid-item"><a href="/upside">Friday Night Funkin' Upside</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/beat/">Friday Night Funkin' Beatstreets</a></div>
+            <div class="grid-item"><a href="/hell">Friday Night Funkin' Hellbeats</a></div>
+            <div class="grid-item"><a href="/soft/">Friday Night Funkin' Soft v1</a></div>
+            <div class="grid-item"><a href="/starcatcher">Friday Night Funkin' Starcatcher</a></div>
+            <div class="grid-item"><a href="/strlight">Friday Night Funkin' Starlight Mayhem</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/ex/">Friday Night Funkin' FT. The Ex</a></div>
+            <div class="grid-item"><a href="/cg5/">Friday Night Funkin' CG5 Edition</a></div>
+            <div class="grid-item"><a href="/baddies/">Friday Night Funkin' Baddies</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/dust/">Friday Night Funkin' Dusttale</a></div>
+            <div class="grid-item"><a href="/lullaby/">Friday Night Funkin' Lullaby</a></div>
+            <div class="grid-item"><a href="/seadate/">Friday Night Funkin' Deep-Sea Date</a></div>
+            <div class="grid-item"><a href="/fever/">Friday Night Fever</a></div>
+            <div class="grid-item"><a href="/holo/">Holo Night Funkin'</a></div>
+            <div class="grid-item"><a href="/viernes/">Viernes Night Funkin'</a></div>
+            <div class="grid-item"><a href="/whitty">VS. Whitty</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/neowhitty/">VS. Neo Whitty</a></div>
+            <div class="grid-item"><a href="/agoti">VS. Agoti</a></div>
+            <div class="grid-item"><a href="/impo">VS. Impostor</a></div>
+            <div class="grid-item"><a href="/bigbro">VS. Big Brother</a></div>
+            <div class="grid-item"><a href="/camellia">VS. Camellia</a></div>
+            <div class="grid-item"><a href="/annie">VS. Annie</a></div>
+            <div class="grid-item"><a href="/miku">VS. Hatsune Miku</a></div>
+            <div class="grid-item"><a href="/chara">VS. Chara</a></div>
+            <div class="grid-item"><a href="/vskk">VS. K.K. Slider</a></div>
+            <div class="grid-item"><a href="/idol">VS. Super Idol</a></div>
+            <div class="grid-item"><a href="/sky">VS. Sky</a></div>
+            <div class="grid-item"><a href="/hex/">VS. Hex</a></div>
+            <div class="grid-item"><a href="/sunday/">VS. Sunday</a></div>
+            <div class="grid-item"><a href="/shaggy/">VS. Shaggy</a></div>
+            <div class="grid-item"><a href="/nonsence/">VS. Nonsense</a></div>
+            <div class="grid-item"><a href="/pwrhr/">VS. Timmy</a></div>
+            <div class="grid-item"><a href="/tord/">VS. Tord</a></div>
+            <div class="grid-item"><a href="/tabi/">VS. Tabi</a></div>
+            <div class="grid-item"><a href="/doxxie/">VS. Doxxie</a></div>
+            <div class="grid-item"><a href="/zardy/">VS. Zardy</a></div>
+            <div class="grid-item"><a href="/bob">Bob and Bosip: The EX Update</a></div>
+            <div class="grid-item"><a href="/tricky/index.html">The Full-Ass Tricky Mod</a></div>
+            <div class="grid-item"><a href="/qt/">QT Mod</a></div>
+            <div class="grid-item"><a href="/kapi/">Arcade Showdown</a></div>
+            <div class="grid-item"><a href="/sarventes/">Mid Fight Masses</a></div>
+            <div class="grid-item"><a href="/date/">The Date Week</a></div>
+            <div class="grid-item"><a href="/roastin/">Roastin' on a Cartoon Cartoon Friday</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/x-event/">The X-Event</a></div>
+            <div class="grid-item"><a href="/starve/">Starving Artist</a></div>
+            <div class="grid-item"><a href="/okko/">O.K. K.O. Let's Get Funky!</a></div>
+            <div class="grid-item"><a href="/salty">Salty's Sunday Night</a></div>
+            <div class="grid-item"><a href="/doki">Doki Doki Takeover</a></div>
+            <div class="grid-item"><a href="/clash">Cartoon Clash</a></div>
+            <div class="grid-item"><a href="/homo">Homophobic Hassle</a></div>
+            <div class="grid-item"><a href="http://scientific.diesmos.com/test">Indie Cross</a></div>
+            <div class="grid-item"><a href="/billy">Silly Billy</a></div>
+            <div class="grid-item"><a href="/secretSonic">Secret Histories</a></div>
+            <div class="grid-item"><a href="/gacha">The Gacha Mod</a></div>
+            <div class="grid-item"><a href="/golf">Golf Minigame</a></div>
+            <div class="grid-item"><a href="/garcello/">Smoke Em' Out Struggle</a></div>
+            <div class="grid-item"><a href="/matt/">Wii Funkin'</a></div>
+            <div class="grid-item"><a href="/pibby">Pibby Corrupted</a></div>
+            <div class="grid-item"><a href="/krusty/">Krusty Karoling</a></div>
+            <div class="grid-item"><a href="/funknaga/">Funk! Miss Nagatoro</a></div>
+              <div class="grid-item"><a href="https://reading.diesmos.com/">FNF ARCHIVES</a></div>
+               <div class="grid-item"><a href="/pibby2">Pibby Apocalypse</a></div>
+        </div>
+        <footer>
+            <p><a href="http://scientific.diesmos.com/week2/">&copy; Jalen And Marcco 2024 V4.0 </a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
